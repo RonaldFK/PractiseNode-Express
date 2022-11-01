@@ -1,0 +1,25 @@
+<div class="wiki__list">
+    <h2>Liste des ventes de voitures en 2021</h2>
+    <table class="table">
+        <tr>
+            <th>Nom du Modèle</th>
+            <th>Quantité de ventes</th>
+        </tr>
+        <% for (voiture of voitures) {%>
+            <tr>
+                <td><%=voiture.modele%></td>
+                <td><%=voiture.ventes%></td>
+            </tr>
+        <%}%>
+  
+    </table>
+     <h2>Dont nombre de ventes supérieur à 500000</h2>
+    <ol>
+        <% for (voiture of voitures) { %>
+            <% if (voiture.ventes > 500000 && voiture.year === 2021) { %>
+                <li><a href="/<%= voiture.modele %>"><%= voiture.modele %></a></li>
+            <% } %>
+            
+        <% } %>
+    </ol>
+</div>

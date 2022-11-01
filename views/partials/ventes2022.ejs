@@ -1,0 +1,17 @@
+<div class="wiki__list">
+    <h2>Liste des ventes de voitures en 2022</h2>
+    <ol>
+        <% for (voiture of voitures) { %>
+            <li><a href="/<%= voiture.modele %>"><%= voiture.modele %></a></li>
+        <% } %>
+    </ol>
+    <h2>Dont nombre de ventes supérieur à 500000</h2>
+    <ol>
+        <% for (voiture of voitures) { %>
+            <% if (voiture.ventes > 500000) { %>
+                <li><a href="/<%= voiture.modele %>"><%= voiture.modele %></a></li>
+            <% } %>
+            
+        <% } %>
+    </ol>
+</div>

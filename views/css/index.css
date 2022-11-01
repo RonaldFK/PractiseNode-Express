@@ -1,0 +1,29 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.wiki {
+    display: flex;
+    gap: 10px;
+    width: 100vw;
+}
+.wiki__list {
+    margin: 20px;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+.table,th {
+    border: 2px solid black;
+    text-align: center;
+}
+.table td {
+    border: 1px solid black;
+    border-top: none;
+}
