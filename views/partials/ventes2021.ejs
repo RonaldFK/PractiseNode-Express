@@ -7,7 +7,7 @@
         </tr>
         <% for (voiture of voitures) {%>
             <tr>
-                <td><%=voiture.modele%></td>
+                <td><a href="/<%=voiture.modele%>"><%=voiture.modele%></a></td>
                 <td><%=voiture.ventes%></td>
             </tr>
         <%}%>

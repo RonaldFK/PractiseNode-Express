@@ -3,6 +3,7 @@ const express = require('express')
 const router = express.Router();
 // Je require mon module voiture
 const voitures = require('./modules/voitures.js')
+const cars = require('./modules/cars.json')
 
 // Pour créer une route, on va utiliser router.get
 
