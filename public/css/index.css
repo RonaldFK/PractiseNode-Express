@@ -1,17 +1,23 @@
 body {
     display: flex;
+    background-color: rgba(67, 201, 156, 0.486);
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 .wiki {
     display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
     width: 100vw;
 }
 .wiki__list {
+    align-self: flex-start;
     margin: 20px;
-    width: 50%;
+    padding: 10px;
+    width: 35%;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -20,11 +26,25 @@ body {
     border-radius: 25px;
 }
 .table,th {
+    font-size: 20px;
+    width: 80%;
     border-radius: 5px;
-    border: 2px solid black;
     text-align: center;
+    color: rgb(75, 70, 70);
+
 }
 .table td {
-    border: 1px solid black;
+    width: 20%;
+    border: 1px solid rgba(138, 137, 137, 0.636);
     border-top: none;
 }
+a:link {
+    text-decoration: none;
+  }
+  
+a:visited {
+    text-decoration: none;
+  }
+a:active {
+    text-decoration: none;
+  }

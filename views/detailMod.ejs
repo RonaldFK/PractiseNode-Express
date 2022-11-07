@@ -1,5 +1,21 @@
 <%- include('./partials/headerMain.ejs')%>
 <body>
-    <h1>Vous êtes sur la page du modèle : <%= modelFind.modele %></h1>
+    <h1>Vous êtes sur la page du modèle : <%= modelFind.Name %></h1>
+    <div class="wiki">
+
+        <div class="wiki__list">
+            <h3>Voiture avec un poid et une localisation identique à : <%= modelFind.Name %></h3>
+            <!-- Je reçois déjà un tableau filtrer ici par poid, je rajoute uniquement un filtre sur l'origine du car -->
+            <ol>
+                <% for (car of sameCarPerWeight) {%>
+                    <% if (car.Origin === OriginOfCar) {%>
+                        <li style="text-decoration: underline;margin-top:5px"><%= car.Name %></li>        
+                        <%}%>
+                <%}%>
+        
+            </ol>
+    
+        </div>
+    </div>
 </body>
 </html>

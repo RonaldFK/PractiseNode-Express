@@ -9,7 +9,7 @@ const router = require('./router');
 app.use(router);
 
 // on précise à express le repertoire dans lequel on place nos fichiers statiques
-app.use(express.static(__dirname + '/views'));
+app.use(express.static(__dirname + '/public'));
 
 // je précise à express quelmoteur de template utiliser dans notre app
 app.set('view engine', 'ejs');

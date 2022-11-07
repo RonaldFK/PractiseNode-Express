@@ -1,0 +1,67 @@
+<div class="wiki__list">
+    <h2>Liste des marques au Japon</h2>
+    <table class="table">
+        <tr>
+            <th>Nom du Modèle</th>
+            <th>Origine de la marque</th>
+            <th>Poid du Véhicule</th>
+        </tr>
+        <% for (car of cars) {%>
+            <% if (car.Origin === 'Japan') {%>
+                <tr>
+                    <td><a href="/<%= car.Name %>"><%=car.Name%></a></td>
+                    <td><%=car.Origin%></td>
+                    <td><%=car.Weight_in_lbs%></td>
+                </tr>
+
+            <%}%>
+        <%}%>
+  
+    </table>
+
+</div>
+<div class="wiki__list">
+    <h2>Liste des marques en Europe</h2>
+    <!-- Je boucle sur mon tableau en vérifiant l'origine du modèle avant de renvoyer les données -->
+    <table class="table">
+        <tr>
+            <th>Nom du Modèle</th>
+            <th>Origine de la marque</th>
+            <th>Poid du Véhicule</th>
+        </tr>
+        <% for (car of cars) {%>
+            <% if (car.Origin === 'Europe') {%>
+                <tr>
+                    <td><a href="/<%= car.Name %>"><%=car.Name%></a></td>
+                    <td><%=car.Origin%></td>
+                    <td><%=car.Weight_in_lbs%></td>
+                </tr>
+
+            <%}%>
+        <%}%>
+  
+    </table>
+
+</div>
+<div class="wiki__list">
+    <h2>Liste des marques au USA</h2>
+    <table class="table">
+        <tr>
+            <th>Nom du Modèle</th>
+            <th>Origine de la marque</th>
+            <th>Poid du Véhicule</th>
+        </tr>
+        <% for (car of cars) {%>
+            <% if (car.Origin === 'USA') {%>
+                <tr>
+                    <td><a href="/<%= car.Name %>"><%=car.Name%></a></td>
+                    <td><%=car.Origin%></td>
+                    <td><%=car.Weight_in_lbs%></td>
+                </tr>
+
+            <%}%>
+        <%}%>
+  
+    </table>
+
+</div>
