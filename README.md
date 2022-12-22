@@ -8,7 +8,7 @@
 
 ### Projet :
 
-Ce petit projet est très simple.
+
 Le but était de partir d'un fichier JSON et d'exploiter les données afin de construire et renvoyer des pages dynamiques.
 
 Pour cela, j'ai utilisé NodeJS avec Express pour la partie serveur ainsi que le moteur de template EJS pour le rendu dynamique.
